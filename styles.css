@@ -1,0 +1,88 @@
+/* Whole Document CSS*/
+* {
+    border-radius: 2rem;
+    /* background-color: #5b2a5d; */
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+      sans-serif;
+    padding: 0.2rem;
+  }
+
+  /*Class Based CSS */
+  .title {
+    top: 0;
+    font-size: 2rem;
+    z-index: 2;
+    text-align: center;
+  }
+  /* Win - Lose? */
+  .result{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 1rem;
+    font-family: sans-serif;
+  }
+  /* scores */
+  .player-score,
+  .computer-score {
+  color: rgb(43, 103, 39);
+  font-style: italic;
+  font-size: large;
+  z-index: 1;
+  }
+  .game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(AdobeStock_201434579_Preview.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .count {
+    color: black;
+    font-size: x-large;
+    background-color: transparent;
+  }
+  .p-score,
+  .c-score {
+    display: flex;
+    animation-name: blink; 
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+   /* justify-content: space-evenly; */
+  }
+  /* Scores Blink at start */
+  @keyframes blink {
+    from {opacity: 0;}
+    to {opacity: 9;}
+  }
+
+  /* Button Styling */
+  .rock,
+  .paper,
+  .scissors {
+    width: 100px;
+    padding: 0.6rem;
+    cursor: pointer;
+  }
+  /* moves */
+  .move,
+  .moves-left {
+    padding: 0.9rem;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: none;
+    text-align: center;
+    background-color: #5b2a5d;
+    border-radius: 10px;
+  }
+  /* Start Over - play again? */
+  .redo{
+    border: none;
+    color: green;
+    font-weight: bold;
+    cursor: pointer;
+  }
